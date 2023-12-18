@@ -22,7 +22,7 @@ body {
   grid-template-rows: repeat(3 minmax(0.3fr, 1fr));
 justify-content: center;
 justify-items: center;
-
+padding: 20px;
 }
 
 header {
@@ -116,12 +116,11 @@ width: 384px;
  padding: 20px;
  gap: 20px;
 
-justify-content: center;
-align-content: center;
-flex-direction: row;
+
+
  }
- 
- .gallery .product {
+
+ .product {
   display: flex;
   padding: 20px;
   flex-wrap: wrap;
@@ -129,8 +128,10 @@ flex-direction: row;
   flex-shrink: 2;
   justify-content: center;
   align-content: center;
-  width: 100%;
-  max-width: 100wh;
+  width: 25%;
+  }
+  .tipi {
+  width: 50%;
   }
 .product img {
   flex-grow: 1;
