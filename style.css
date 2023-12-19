@@ -203,41 +203,47 @@ margin: 20px;
 .tertiary {
   grid-column: 1/2;
   grid-row: 4/5;
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  justify-content: center;
-  background-color: #ffe700;
-  }
+  justify-content:space-around;
+ }
 .tertiary .image {
-  display: flex;
+  display: grid;
   grid-column: 1/2;
   grid-row: 1/2;
   height: 100%;
-  position: relative;
-  left: 0;
   width: auto;
   justify-self: end;
  }
 
-.image img {
-  max-height: 600px;
-  width: auto;
-  flex-grow: 1;
-  flex-basis: 300px;
-}
-.tertiary .text {
-  display: flex;
-  flex-direction: column;
-  grid-column: 2/3;
-  grid-row: 1/2;
+.image a {
+/*   max-height: 600px; */
   width: 100%;
+  height: auto;
+  /* flex-grow: 1; */
+  /* flex-basis: 100px; */
+}
+.image a img {
   height: 100%;
-  margin: 0px;
-  padding: 0px;
-  gap: 0px;
-  
+}
+.amarillo {
+display: grid;  
+position: relative;
+text-align: center;
+color: white;
+grid-column: 2/3;
+grid-row: 1/2;
+height: 100%;
+width: auto;
+}
+
+.amarillo .text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 .tertiary .text button {
