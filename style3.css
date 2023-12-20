@@ -135,23 +135,6 @@ grid-row: 1/4;
   
 }
 
-
-
-/* .star {
-  grid-column: 1/4;
-  grid-row: 1/7;
-}
-.product a img {
-  width: 100px;
-}
-/* .sub {
-  grid-column: 4/7;
-  grid-row: 1/7;
-  grid-template-columns: repeat(6);
-  grid-template-rows: repeat(6);
-} */ 
-
-
 .secondary {
   background-color: #007cc1;
   color: white;
@@ -169,14 +152,25 @@ grid-row: 1/4;
   flex-wrap: nowrap;
   width: 90%;
   overflow: auto;
-  
+  align-items: center;
+  /* justify-content: center; */
+  justify-items: center;
+  align-content: center;
 }
 .carousel article {
+  display: flex;
   object-fit: cover;
+  justify-content: space-between;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
 }
 .carousel img {
   width: auto;
   height: 90%;
+}
+.carousel p {
+  text-align: center;
 }
 .tertiary {
   display: flex;
@@ -261,10 +255,8 @@ footer {
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8(minmax 100, 1fr));
-  margin: 30px;
-  gap: 20px;
-  align-items: center;
+  grid-template-rows: repeat(8(minmax 100, 0.5fr));
+  justify-content: center;
 }
 .tipi {
 grid-column: 1/2;
@@ -283,7 +275,10 @@ grid-row: 1/2;
 .school {
   grid-column: 1/2;
   grid-row: 5/6;
-
+}
+.gallery img {
+  width: auto;
+  height: 50%;
 }
 .secondary {
   grid-column: 1/2;
@@ -293,6 +288,18 @@ grid-row: 1/2;
   align-items: center;
   align-content: center;
   justify-items: center;
-  
-}
+  }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+  .carousel article {
+    object-fit: cover;
+  }
+  .carousel img {
+    width: auto;
+    height: 90%;
+  }
 }
