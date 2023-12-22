@@ -20,16 +20,16 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: 255,255,255;
-  /* position: relative; */
 }
 header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  }
+    }
 .initad {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
+
 }
 .initad nav ul {
   background-color: black;
@@ -47,25 +47,29 @@ font-size: 15px;
 .prime {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.7fr 0.3fr;
-  margin-bottom: 10px;
+  grid-template-rows: 0.5fr 0.3fr;
+  position: relative;
+  top: 30px;
   }
+
+  /* NAVIBAR */
 .present {
   grid-column: 1/4;
   grid-row: 1/2;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   justify-items: center;
   align-content: center;
   align-items: center;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 95%;
   background-color: rgb(255, 255, 255);
   z-index: 1;
-  padding: 20px;
-  
+  padding: 2px;
 }
+  /* NAVIBAR */
 .buscador {
   width: 50%;
 }
@@ -84,8 +88,20 @@ font-size: 15px;
   background-color: rgb(245, 245, 245);
   }
 
-  .logo {
+  .init {
   width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+.menu img {
+    width: 25px;
 }
 .logo img {
   width: 90px;
@@ -94,14 +110,14 @@ font-size: 15px;
 .intro {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: space-evenly;
+  width: 85%;
 }
 .shortcuts {
   grid-column: 1/4;
   grid-row: 2/3;
   display: flex;
-  
+  padding: 0.625rem 0.9375rem;
   justify-self: center;
   justify-content: space-between;
 /*   grid-template-columns: repeat(3, 1fr);
@@ -129,6 +145,7 @@ font-size: 15px;
 .one {
   width: 80%;
   color: #000;
+  height: 0.5px;
 }
 main {
   display: flex;
@@ -298,7 +315,7 @@ footer {
   align-content: space-evenly;
   align-items:center;
   justify-items: center;
-    
+   
 }
 .fidelity {
   grid-column: 1/2;
