@@ -1,15 +1,16 @@
+:root {
+    --ikea-font: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui, sans-serif !important;
+    
+  }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /* color:black; */
-}
-
-:root {
-  --ikea-font: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui, sans-serif !important;
   font-family: var(--ikea-font);
+
 }
 
 body {
@@ -27,6 +28,7 @@ min-height: 100%;
 margin: 0;
 font-size: .875rem;
 line-height: 1.571;
+font-family:'Courier New', Courier, monospace;
 }
 
 

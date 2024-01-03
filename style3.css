@@ -1,17 +1,84 @@
+:root {
+  --ikea-font: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
+    sans-serif !important;
+  /* CLONADO VARS IKEA */
+  --colour-text-and-icon-1: 17, 17, 17;
+  --colour-text-and-icon-2: 72, 72, 72;
+  --colour-text-and-icon-3: 118, 118, 118;
+  --colour-text-and-icon-4: 146, 146, 146;
+  --colour-text-and-icon-5: 255, 255, 255;
+  --colour-neutral-1: 255, 255, 255;
+  --colour-neutral-2: 245, 245, 245;
+  --colour-neutral-3: 223, 223, 223;
+  --colour-neutral-4: 204, 204, 204;
+  --colour-neutral-5: 146, 146, 146;
+  --colour-neutral-6: 72, 72, 72;
+  --colour-neutral-7: 17, 17, 17;
+  --colour-semantic-informative: 0, 88, 163;
+  --colour-semantic-positive: 10, 138, 0;
+  --colour-semantic-caution: 242, 106, 47;
+  --colour-semantic-negative: 224, 7, 81;
+  --colour-interactive-primary-bg-default: 17, 17, 17;
+  --colour-interactive-primary-bg-hover: 51, 51, 51;
+  --colour-interactive-primary-bg-pressed: 0, 0, 0;
+  --colour-interactive-emphasised-bg-default: 0, 88, 163;
+  --colour-interactive-emphasised-bg-hover: 0, 79, 147;
+  --colour-interactive-emphasised-bg-pressed: 0, 62, 114;
+  --colour-interactive-secondary-bg-default: 245, 245, 245;
+  --colour-interactive-secondary-bg-hover: 223, 223, 223;
+  --colour-interactive-secondary-bg-pressed: 204, 204, 204;
+  --colour-interactive-subtle-bg-default: 255, 255, 255;
+  --colour-interactive-subtle-bg-hover: 245, 245, 245;
+  --colour-interactive-subtle-bg-pressed: 223, 223, 223;
+  --colour-interactive-destructive-bg-default: 224, 7, 81;
+  --colour-interactive-destructive-bg-hover: 204, 0, 61;
+  --colour-interactive-destructive-bg-pressed: 184, 0, 41;
+  --colour-interactive-disabled-1: 223, 223, 223;
+  --colour-interactive-disabled-2: 146, 146, 146;
+  --colour-interactive-disabled-3: 255, 255, 255;
+  --colour-interactive-emphasised-border-selected: 0, 88, 163;
+  --colour-interactive-subtle-border-selected: 17, 17, 17;
+  --colour-interactive-subtle-border-default: 146, 146, 146;
+  --colour-interactive-subtle-border-hover: 17, 17, 17;
+  --colour-interactive-subtle-border-pressed: 17, 17, 17;
+  --colour-static-ikea-brand-blue: 0, 88, 163;
+  --colour-static-ikea-brand-yellow: 255, 219, 0;
+  --colour-static-ikea-family: 0, 124, 193;
+  --colour-static-white: 255, 255, 255;
+  --colour-static-black: 17, 17, 17;
+  --colour-static-dark-grey: 118, 118, 118;
+  --colour-static-grey: 223, 223, 223;
+  --colour-static-light-grey: 245, 245, 245;
+  --colour-elevation-1: 255, 255, 255;
+  --colour-elevation-2: 255, 255, 255;
+  --colour-elevation-3: 17, 17, 17;
+  --colour-elevation-1-border: 223, 223, 223;
+  --colour-elevation-2-border: 72, 72, 72;
+  --colour-commercial-message-new: 202, 80, 8;
+  --colour-commercial-message-new-lower-price: 204, 0, 8;
+  --colour-commercial-message-ikea-family: 0, 124, 193;
+  --colour-commercial-message-bti-yellow: 255, 219, 0;
+  --colour-commercial-message-bti-red: 204, 0, 8;
+  --colour-campaign-sustainability: 0, 133, 62;
+  --product-image-radius-m: 0px;
+  --product-image-radius-s: 0px;
+  --product-image-transform: none;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /* color:black; */
+  font-family: var(--ikea-font);
 }
 
-:root {
-  --ikea-font: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', system-ui,
-    sans-serif !important;
-  font-family: var(--ikea-font);
-  align-items: center;
+a {
+  color: black;
+}
+a:hover {
+text-decoration: underline;
 }
 
 body {
@@ -19,21 +86,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: 255,255,255;
+  background: rgb(var(--colour-neutral-1, 255, 255, 255));
+  color: rgb(var(--colour-text-and-icon-2, 72, 72, 72));
+  align-items: center;
 }
 header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-    }
+}
 .initad {
   padding-bottom: 0px;
-
 }
 .initad nav ul {
   background-color: black;
-  color: wheat;
+  color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -41,8 +109,8 @@ header {
   align-content: center;
 }
 .initad a {
-color: white;
-font-size: 15px;
+  color: white;
+  font-size: 15px;
 }
 .prime {
   display: grid;
@@ -50,13 +118,13 @@ font-size: 15px;
   grid-template-rows: 0.5fr 0.3fr;
   position: relative;
   top: 30px;
-  }
+}
 
-  /* NAVIBAR */
+/* NAVIBAR */
 .present {
   grid-column: 1/4;
   grid-row: 1/2;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   justify-items: center;
@@ -69,7 +137,7 @@ font-size: 15px;
   z-index: 1;
   padding: 2px;
 }
-  /* NAVIBAR */
+/* NAVIBAR */
 .buscador {
   width: 50%;
 }
@@ -86,9 +154,9 @@ font-size: 15px;
   border: 2px solid transparent;
   border-radius: 50em;
   background-color: rgb(245, 245, 245);
-  }
+}
 
-  .init {
+.init {
   width: 10%;
   display: flex;
   justify-content: space-around;
@@ -101,7 +169,7 @@ font-size: 15px;
   font-size: 12px;
 }
 .menu img {
-    width: 25px;
+  width: 25px;
 }
 .logo img {
   width: 90px;
@@ -120,9 +188,9 @@ font-size: 15px;
   padding: 0.625rem 0.9375rem;
   justify-self: center;
   justify-content: space-between;
-/*   grid-template-columns: repeat(3, 1fr);
+  /*   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr; */
-  width: 80%;  
+  width: 80%;
 }
 .fast {
   grid-column: 1/3;
@@ -158,7 +226,7 @@ main {
   background-color: #007cc1;
   color: white;
   width: 100%;
-  padding: 40px;  
+  padding: 40px;
 }
 .children {
   display: flex;
@@ -174,23 +242,20 @@ main {
   align-items: center;
 }
 .tipi {
-grid-column: 1/5;
-grid-row: 1/4;
+  grid-column: 1/5;
+  grid-row: 1/4;
 }
 .carpet {
   grid-column: 5/7;
   grid-row: 1/2;
-
 }
 .tube {
   grid-column: 5/7;
   grid-row: 2/4;
-
 }
 .school {
   grid-column: 7/9;
   grid-row: 3/4;
-
 }
 .secondary {
   grid-column: 7/9;
@@ -200,7 +265,6 @@ grid-row: 1/4;
   align-items: center;
   align-content: center;
   justify-items: center;
-  
 }
 .product a img {
   object-fit: cover;
@@ -212,15 +276,12 @@ grid-row: 1/4;
 .gallery article {
   width: auto;
   height: 100%;
-
-  
 }
 
 .secondary {
   background-color: #007cc1;
   color: white;
   height: 100%;
-
 }
 .kitchen {
   display: flex;
@@ -255,6 +316,7 @@ grid-row: 1/4;
 .carousel img {
   width: auto;
   height: 90%;
+  max-height: 500px;
 }
 .carousel p {
   text-align: center;
@@ -265,7 +327,7 @@ grid-row: 1/4;
   width: 90%;
   justify-content: center;
   gap: 0;
-  }
+}
 .tertiary .image a {
   height: 100%;
   width: 100%;
@@ -280,9 +342,9 @@ grid-row: 1/4;
   justify-self: end;
 }
 .tertiary .image img {
-width: 100%;
-height: 100%;
-object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .tertiary .text {
   display: flex;
@@ -295,27 +357,28 @@ object-fit: cover;
   justify-content: center;
   height: auto;
   width: 50%;
-  }
-  .tertiary .text button {
-    width: 30%;
-  }
+}
+.tertiary .text button {
+  width: 30%;
+}
 
-  .tertiary .text h2 {
-    text-align: center;
-  }
-  .tertiary .text p {
-    text-justify: auto;
-    width: 50%;
-  }
+.tertiary .text h2 {
+  text-align: center;
+}
+.tertiary .text p {
+  text-justify: auto;
+  width: 50%;
+}
 footer {
   display: grid;
   grid-template-columns: 0.2fr 0.8fr;
   grid-template-rows: 0.9fr 0.4fr;
   width: 80%;
   align-content: space-evenly;
-  align-items:center;
+  align-items: center;
   justify-items: center;
-   
+  color: black;
+  font-style: normal;
 }
 .fidelity {
   grid-column: 1/2;
@@ -339,42 +402,41 @@ footer {
 }
 
 @media (max-width: 900px) {
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8(minmax 100, 0.5fr));
-  justify-content: center;
-}
-.tipi {
-grid-column: 1/2;
-grid-row: 1/2;
-}
-.carpet {
-  grid-column: 1/2;
-  grid-row: 2/3;
-
-}
-.tube {
-  grid-column: 1/2;
-  grid-row: 3/4;
-
-}
-.school {
-  grid-column: 1/2;
-  grid-row: 5/6;
-}
-.gallery img {
-  width: auto;
-  height: 50%;
-}
-.secondary {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  padding: 300px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center;
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8 (minmax 100, 0.5fr));
+    justify-content: center;
+  }
+  .tipi {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .carpet {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .tube {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .school {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .gallery img {
+    width: auto;
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  .secondary {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 300px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
   }
   .carousel {
     display: flex;
@@ -387,6 +449,6 @@ grid-row: 1/2;
   }
   .carousel img {
     width: auto;
-    height: 90%;
+    max-height: 30vh;
   }
 }
