@@ -76,9 +76,7 @@
 
 a {
   color: black;
-}
-a:hover {
-text-decoration: underline;
+  font-size: 14px;
 }
 
 body {
@@ -315,12 +313,63 @@ main {
 }
 .carousel img {
   width: auto;
-  height: 90%;
-  max-height: 500px;
+  height: 80%;
+  max-height: 300px;
 }
+
 .carousel p {
   text-align: center;
 }
+
+.pic2 {
+  display: none;
+}
+.spriting:hover {
+  .pic2 {
+    display: block;
+  }
+}
+.spriting:hover {
+  .pic1 {
+    display: none;
+  }
+}
+
+.carousel a:hover {
+  h5 {
+    text-decoration: underline;
+  }
+  }
+
+h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.carousel p {
+  text-align: start;
+  font-size: 14px;
+}
+
+.carousel div {
+  font-weight: 700;
+  display: block;
+}
+
+.carousel span {
+  font-size: 28px;
+}
+
+.carousel sub {
+  font-weight: 700;
+  font-weight: 14px;
+}
+
+.carousel span sup, sub {
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .tertiary {
   display: flex;
   object-fit: cover;
