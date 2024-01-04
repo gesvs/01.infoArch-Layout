@@ -63,6 +63,10 @@
   --product-image-radius-m: 0px;
   --product-image-radius-s: 0px;
   --product-image-transform: none;
+  --margin-bottom-s: 2.5rem;
+  --margin-bottom-l: 4rem;
+  --margin-bt-s: 2.5rem 0px;
+  --margin-bt-l: 4rem 0px;
 }
 
 * {
@@ -94,6 +98,11 @@ header {
   flex-wrap: wrap;
   width: 100%;
 }
+
+ul a:hover {
+  text-decoration: underline;
+}
+
 .initad {
   padding-bottom: 0px;
 }
@@ -238,6 +247,7 @@ main {
   margin: 30px;
   gap: 20px;
   align-items: center;
+  margin: var(--margin-bt-s);
 }
 .tipi {
   grid-column: 1/5;
@@ -314,7 +324,7 @@ main {
 .carousel img {
   width: auto;
   height: 80%;
-  max-height: 300px;
+  max-height: 50px;
 }
 
 .carousel p {
@@ -429,6 +439,7 @@ footer {
   color: black;
   font-style: normal;
 }
+
 .fidelity {
   grid-column: 1/2;
   grid-row: 1/2;
