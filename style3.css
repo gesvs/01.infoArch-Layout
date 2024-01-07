@@ -791,6 +791,7 @@ flex-wrap: wrap;
     width: 30%;
     justify-content: space-evenly;
     align-items: center;
+    padding-left: 10px;
   }
   .intro {
     width: 70%;
