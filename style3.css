@@ -133,6 +133,7 @@ ul a:hover {
 .initad {
   padding-bottom: 0px;
 }
+
 .initad nav ul {
   background-color: black;
   color: white;
@@ -166,7 +167,7 @@ ul a:hover {
   align-items: center;
   position: sticky;
   top: 0;
-  width: 95%;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 1;
   padding: 2px;
@@ -270,7 +271,7 @@ main {
   flex-direction: column;
   margin-top: 10px;
   align-items: center;
-  width: 80vw;
+  width: 90%;
   gap: 0px;
 }
 .primary {
@@ -288,31 +289,33 @@ main {
 .children {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .kitchen {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 100%;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   }
 
 .tertiary {
   display: flex;
   object-fit: cover;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   gap: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .children .title {
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 .text {
@@ -401,13 +404,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 90%;
 }
 
 .carousel {
   display: flex;
   flex-wrap: nowrap;
-  width: 90%;
-  gap: 80px;
+  width: 100%;
+  gap: 50px;
   overflow: auto;
   align-items: center;
   /* justify-content: center; */
@@ -681,13 +685,13 @@ gap: 1rem;
     justify-items: center;
   }
   body {
-    width: 100vw;
+    width: 100%;
   }
   main {
-    width: 100vw;
+    width: 100%;
   }
   .kitchen {
-    width: 100vw;
+    width: 100%;
   }
   .carousel {
     display: flex;
@@ -721,14 +725,14 @@ gap: 1rem;
     width: 100%;
   }
   footer {
-width: 100vw;
+width: 100%;
 flex-wrap: wrap;
   }
-  .direct {
+.direct {
     flex-direction: column;
     
   }
-  .fidelity {
+.fidelity {
     width: 100%;
   }
 /*   .access {
@@ -749,5 +753,7 @@ flex-wrap: wrap;
   .access ul {
     gap: 1rem;
   }
-  
+  .conditions {
+    width: 90%;
+  }
 }
