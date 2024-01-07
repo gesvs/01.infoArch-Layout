@@ -544,7 +544,6 @@ margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  height: 40vh;
   font-size: 14px;
  }
  .conditions p {
@@ -675,7 +674,7 @@ gap: 1rem;
   .secondary {
     grid-column: 1/2;
     grid-row: 4/5;
-    padding: 300px;
+    padding: 100px;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -686,6 +685,7 @@ gap: 1rem;
     flex-direction: column;
     width: 90%;
     align-items: center;
+    gap: 0px;
   }
   .carousel article {
     object-fit: cover;
@@ -693,5 +693,29 @@ gap: 1rem;
   .carousel img {
     width: auto;
     max-height: 30vh;
+  }
+
+  .tertiary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .tertiary .image {
+    width: 100%;
+  }
+  .tertiary .text {
+    width: 100%;
+  }
+  footer {
+width: 100vw;
+  }
+  .direct {
+    flex-direction: column;
+  }
+  .fidelity {
+    width: 100%;
+  }
+  .access {
+    width: 100%;
   }
 }
