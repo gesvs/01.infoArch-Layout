@@ -680,20 +680,25 @@ gap: 1rem;
     align-content: center;
     justify-items: center;
   }
+  body {
+    width: 100vw;
+  }
+  main {
+    width: 100vw;
+  }
   .kitchen {
-    width: 90vw;
+    width: 100vw;
   }
   .carousel {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-     gap: 0px;
+    gap: 0px;
     
     
   }
   .carousel article {
-    object-fit: cover;
     width: 100%;
     display: flex;
     justify-content: center;
