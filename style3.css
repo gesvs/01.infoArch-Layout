@@ -680,20 +680,28 @@ gap: 1rem;
     align-content: center;
     justify-items: center;
   }
+  .kitchen {
+    width: 90vw;
+  }
   .carousel {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 90%;
-    align-items: center;
-    gap: 0px;
+    width: 100%;
+     gap: 0px;
+    
+    
   }
   .carousel article {
     object-fit: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
   }
   .carousel img {
-    width: auto;
-    max-height: 30vh;
+     max-height: 25%;
+    
   }
 
   .tertiary {
