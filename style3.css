@@ -146,10 +146,19 @@ ul a:hover {
 .initad a {
   color: white;
   font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .initad a:hover {
   text-decoration: none;
   font-weight: 700;
+}
+
+.initad img {
+  height: 16px;
 }
 
 .prime {
@@ -203,8 +212,6 @@ ul a:hover {
 
 
 #rastrea:focus {
-  
-  border-color: red;
   padding-left: 40px;
 /*   border-style: solid;
   border-color: #ffe700;
@@ -237,6 +244,23 @@ ul a:hover {
   justify-content: space-evenly;
   width: 85%;
 }
+
+.user, .favs, .cart {
+  cursor: pointer;
+}
+
+.user:hover {
+  text-decoration: underline;
+}
+
+.favs:hover {
+  text-decoration: underline;
+}
+
+.cart:hover {
+text-decoration: underline;
+}
+
 .shortcuts {
   grid-column: 1/4;
   grid-row: 2/3;
@@ -268,8 +292,8 @@ ul a:hover {
   justify-content: end;
 }
 .one {
-  width: 80%;
-  color: #000;
+  width: 90%;
+  color: #7c7c7c;
   height: 0.5px;
 }
 main {
@@ -322,15 +346,15 @@ main {
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
-.text {
-  width: 70%;
+.children .text {
+  width: 80%;
 }
 
 .ver {
-  width: 20%;
+  width: 10%;
   display: flex;
   align-items: end;
   justify-content: end;
@@ -411,7 +435,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
 .carousel {
@@ -655,6 +679,17 @@ gap: 1rem;
 }
 
 @media (max-width: 900px) {
+  .children .title {
+    width: 90%;
+    flex-direction: column;
+  }
+  .children .text {
+    width: 100%;
+  }
+  .ver {
+    width: 100%;
+  }
+  
   .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -699,6 +734,9 @@ gap: 1rem;
   }
   .kitchen {
     width: 100%;
+  }
+  .kitchen .title {
+    width: 90%;
   }
   .carousel {
     display: flex;
@@ -807,5 +845,12 @@ flex-wrap: wrap;
 @media (max-width: 490px) {
   .shortcuts {
     display: none;
+  }
+  .init {
+    gap: 5px;
+    width: 40%;
+  }
+  .intro {
+    width: 60%;
   }
 }
