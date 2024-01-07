@@ -799,7 +799,9 @@ flex-wrap: wrap;
   .buscador {
     width: 90%;
   }
-
+  #rastrea {
+    width: 100%;
+  }
 }
 
 @media (max-width: 490px) {
