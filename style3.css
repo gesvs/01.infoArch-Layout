@@ -775,6 +775,8 @@ flex-wrap: wrap;
 
   .shortcuts {
    width: 100%;
+   font-size: 12px;
+   flex-wrap: wrap;
   }
   .fast {
    width: 80%;
@@ -787,6 +789,8 @@ flex-wrap: wrap;
   }
   .init {
     width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .intro {
     width: 70%;
@@ -795,4 +799,10 @@ flex-wrap: wrap;
     width: 90%;
   }
 
+}
+
+@media (max-width: 490px) {
+  .shortcuts {
+    display: none;
+  }
 }
